@@ -1,6 +1,9 @@
-import pygame, sys, random
 from pygame import  draw
-	
+import pygame
+import sys
+import random
+
+
 def ball_animation():
 	global ball_speed_x, ball_speed_y, player_score, opponent_score, score_timer
 	
@@ -21,6 +24,7 @@ def ball_animation():
 
 	if ball.colliderect(player) or ball.colliderect(opponent):
 		ball_speed_x *= -1
+
 
 def player_animation():
 	player.y += player_speed
